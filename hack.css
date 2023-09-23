@@ -1,0 +1,487 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.hero{
+ height: 100vh;
+ width: 100%;
+ background-image: url(kali2.png);
+ image-resolution: 1000px;
+ background-size: cover;
+ background-position: center;
+ overflow: auto;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 45px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.logo{
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+span{
+    color: #f9004d;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: bold;
+}
+nav ul li a:hover{
+    color: #f9004d;
+    transition: .5s ease-in-out;
+}
+.btn{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: ease-in-out .4s;
+}
+.btn:hover{
+    transform: scale(1.4);
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+}
+h4{
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+h2{
+    color: rgba(161, 90, 161, 0.8);
+    letter-spacing: 1px;
+    font-size: 20px;                    
+}
+.about{
+    height: 100vh;
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+    padding-top: 0px;
+    padding-bottom: 20px;
+
+ }
+.about img{
+    height: auto;
+    width: 430px;
+    border: 3px solid #252525;
+    border-radius: 15px 50px;
+    box-shadow: 5px 10px #969292;
+    transition: transform 0.3s ease-in-out;
+    animation: glitch 1s infinite;
+    transform:
+    rotateX(51deg)
+    rotateZ(43deg);
+  transform-style: flat;
+  border-radius: 32px;
+  box-shadow:
+    1px 1px 0 1px #f9f9fb,
+    -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+    28px 28px 28px 0 rgba(34, 33, 81, 0.25);
+  transition:
+    .4s ease-in-out transform,
+    .4s ease-in-out box-shadow;
+ }
+ .about img:hover{
+    transform: scale(1.1);
+    transform:
+    translate3d(0px, -16px, 0px)
+    rotateX(1deg)
+    rotateZ(1deg);
+  box-shadow:
+    1px 1px 0 1px #f9f9fb,
+    -1px 0 28px 0 rgba(34, 33, 81, 0.01),
+    54px 54px 28px -10px rgba(34, 33, 81, 0.15);
+}
+ 
+ 
+.about-text{
+    width: 550px;
+}
+.main{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+.about-text h2{
+    color: white;
+    font-size: 75px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    font-family: "plutur";
+    letter-spacing: 5px;
+}
+.about-text h5{
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-transform: capitalize;
+}
+.about-text p{
+    color: #fcfc;
+    letter-spacing: 1px;
+    line-height: 28px;
+    font-size: 18px;
+    margin-bottom: 45px;
+}
+button{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: .4s;
+}
+button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+.section{
+    width: 100vh;
+    height: 100vh;
+}
+
+.inform{
+    height: 100vh;
+    width: auto;
+    padding: 30px 0px;
+    background-color: #191919;
+    padding-top: 10%;
+    padding-left: 70px;
+}
+.title{
+   padding-left: 50px;
+   padding-top: 50px;
+   padding-left: 45%;
+}
+.title h2{
+    text-decoration: none;
+    font-size: 40px;
+    font-family: Foldit , cursive;
+  }
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 300px;
+  }
+  .image{
+    width: 100%;
+    height: 100%;
+    background-image: url(david.jpg);
+    background-size: cover;
+  }
+  .text{
+    font-family: Bebas Neue , sans-serif;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    color: #fff;
+    background-color: rgb(0,0,0,0.5);
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+  }
+  .container:hover .image {
+    background-position: bottom;
+  }
+  .container:hover .text{
+    opacity: 1;
+    background-position: top;
+  }
+  .text p{
+    font-size: 20;
+    font-family: 'EB Garamond', serif;
+    width: auto;
+    text-decoration: none;
+}
+.information{
+    height: 100vh;
+    width: 100%;
+    padding: 100px 0px;
+    background-color: #191919;
+    padding-top: 150px;
+    padding-bottom: 20px;
+    padding-left: 49%;
+    text-decoration: none;
+}
+#a1{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 10px 10px;
+    transform: scale(1);
+    transition: transform 0.3s;
+}
+#a1:hover{
+    background-color: transparent;
+    border: 2px solid #198;
+    transform: scale(1.2);
+}
+@import url('https://fonts.googleapis.com/css?family=Poppins:900i');
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: 30px 80px 0;
+}
+
+.cta {
+    display: flex;
+    padding: 10px 45px;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    color:  black;
+    background: #f9004d;
+    transition: 1s;
+    box-shadow: 6px 6px 0 black;
+    transform: skewX(-15deg);
+}
+
+.cta:focus {
+   outline: none; 
+}
+
+.cta:hover {
+    transition: 0.5s;
+    box-shadow: 10px 10px 0 #FBC638;
+}
+
+.cta span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 0px;
+}
+
+.cta:hover  span:nth-child(2) {
+    transition: 0.5s;
+    margin-right: 45px;
+}
+
+  span {
+    transform: skewX(15deg) 
+  }
+
+  span:nth-child(2) {
+    width: 20px;
+    margin-left: 30px;
+    position: relative;
+    top: 12%;
+  }
+  
+/**************SVG****************/
+
+path.one {
+    transition: 0.4s;
+    transform: translateX(-60%);
+}
+
+path.two {
+    transition: 0.5s;
+    transform: translateX(-30%);
+}
+
+.cta:hover path.three {
+    animation: color_anim 1s infinite 0.2s;
+}
+
+.cta:hover path.one {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover path.two {
+    transform: translateX(0%);
+    animation: color_anim 1s infinite 0.4s;
+}
+
+/* SVG animations */
+
+@keyframes color_anim {
+    0% {
+        fill: white;
+    }
+    50% {
+        fill: #FBC638;
+    }
+    100% {
+        fill: white;
+    }
+}
+footer{
+    position: relative;
+    width: 100%;
+    height: 400px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #191919;
+}
+footer p:nth-child(1){
+    font-size: 20px;
+    color: white ;
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-top: 50px;
+    position: relative;
+    margin-left: 15px;
+    font-family: "plutur";
+    letter-spacing: 4px;
+}
+.social{
+    display: flex;
+    position: relative;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+.social a{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    position: relative;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    color: #0077b5;
+   font-size: 25px;
+   background: transparent;
+   margin: 20px 22px 20px;
+   text-decoration: none;
+}
+.social a:hover{
+    background: transparent;
+      color: #0077b5;
+      box-shadow: 0 0 30px 0;
+      transform: scale3d(1,2);
+      transition: .3s ease-out;
+}
+.social a:nth-child(2){
+    width: 50px;
+    height: 50px;
+    display: flex;
+    position: relative;
+    border-radius:50% ;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 22px 20px;
+    text-decoration: none;
+    font-size: 25px;
+    color:blue;
+    background: transparent;
+}
+.social a:nth-child(2):hover{
+    transform: scale(1,1);
+    transition: ease-in-out .5s;
+    box-shadow: 0 0 25px 0 blue;
+    background: black;
+}
+.social a:nth-child(3){
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: transparent;
+    margin: 20px 22px 20px 20px;
+    font-size: 25px;
+    color: transparent;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-clip: text;
+  -webkit-background-clip: text;
+} 
+.social a:nth-child(4){
+    width: 50px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: green;
+    background:transparent;
+    border-radius:50% ;
+    margin: 20px 22px 20px;
+    font-size: 25px;
+    text-decoration: none;
+    display: flex;
+}
+.social a:nth-child(3):hover{
+    box-shadow: 0 0 25px 0 rgb(187, 185, 59);
+    background: transparent;
+    transform: scale(1,1);
+    transition: .5s ease-in-out;
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.social a:nth-child(4):hover{
+    color: green;
+    box-shadow: 0 0 25px 0 green;
+    transform: scale(1,1);
+    transition: .5s ease-in-out;
+    background: black;
+}
+.copy-right{
+    width: auto;
+    height: auto;
+    position: relative;
+    margin: auto;
+}
+@font-face{
+    font-family: "Plutur";
+    src: url(C:\Users\HP\Documents\Plutur.ttf)
+    format("truetype")
+}
+.copy-right h2{
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    font-size:15px;
+    font-family: "Plutur";
+    color: white;
+    top: 50%;
+    left: 14.5%;
+    letter-spacing: 10px;
+}
+.copy-right a{
+    color: white;
+    position: relative;
+    left: 22px;
+    top: 1px;
+    font-size: 20px;
+}
